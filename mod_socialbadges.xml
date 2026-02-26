@@ -1,9 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
-<extension type="module" version="3.1.0" client="site" method="upgrade">
+<extension type="module" version="6.0.0" client="site" method="upgrade">
     <name>Social Badges</name>
     <author>Michael Allen</author>
     <version>6.0.0</version>
     <description>Displays social badges.</description>
+    <updateservers>
+      <server type="extension" name="mod_socialbadges" priority="1">https://raw.githubusercontent.com/we-write-code-not-art/joomla-mod-socialbadges/main/manifest.xml</server>
+    </updateservers>
     <files>
         <filename>index.html</filename>
         <filename>mod_socialbadges.xml</filename>
@@ -113,4 +116,5 @@
 
 			</fields>	
 		</config>
+
 </extension>
