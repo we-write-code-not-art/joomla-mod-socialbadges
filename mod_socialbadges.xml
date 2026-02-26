@@ -2,24 +2,15 @@
 <extension type="module" version="3.1.0" client="site" method="upgrade">
     <name>Social Badges</name>
     <author>Michael Allen</author>
-    <version>1.0.0</version>
-    <description>Displays social badgesdd.</description>
+    <version>6.0.0</version>
+    <description>Displays social badges.</description>
     <files>
         <filename>index.html</filename>
         <filename>mod_socialbadges.xml</filename>
         <filename module="mod_socialbadges">mod_socialbadges.php</filename>
         <filename>helper.php</filename>
-        <filename>media/index.html</filename>
-        <filename>media/css/index.html</filename>
-        <filename>media/css/style.css</filename>
-        <filename>media/fonts/index.html</filename>
-        <filename>media/fonts/social-badges.eot</filename>
-        <filename>media/fonts/social-badges.svg</filename>
-        <filename>media/fonts/social-badges.ttf</filename>
-        <filename>media/fonts/social-badges.woff</filename>
-        <filename>media/fonts/social-badges.woff2</filename>
-        <filename>tmpl/index.html</filename>
-        <filename>tmpl/default.php</filename>
+        <folder>media</folder>
+        <folder>tmpl</folder>
     </files>
 		<config>
 			<fields name="params">
