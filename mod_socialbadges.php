@@ -34,4 +34,4 @@ $doc->addStyleSheet($templatePath . 'modules/mod_socialbadges/media/css/style.cs
 $badges = modSocialBadgesHelper::getBadges($params);
 $moduleclass_sfx = htmlspecialchars($params->get('moduleclass_sfx'));
 
-require JModuleHelper::getLayoutPath('mod_socialbadges', $params->get('layout', 'default'));
+require ModuleHelper::getLayoutPath('mod_socialbadges', $params->get('layout', 'default'));
