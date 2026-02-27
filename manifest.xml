@@ -4,10 +4,10 @@
 		<description>Lets you display a number of social badges in a module</description>
 		<element>mod_socialbadges</element>
 		<type>module</type>
-		<version>6.0.1</version>
+		<version>6.0.2</version>
 		<infourl title="Social Badges Module 6.0.0">https://www.we-write-code-not-art.com/</infourl>
 		<downloads>
-			<downloadurl type="full" format="zip">https://github.com/we-write-code-not-art/joomla-mod-socialbadges/releases/download/6.0.0/mod_socialbadges_6.0.1.zip</downloadurl>
+			<downloadurl type="full" format="zip">https://github.com/we-write-code-not-art/joomla-mod-socialbadges/releases/download/6.0.0/mod_socialbadges_6.0.2.zip</downloadurl>
 		</downloads>
 		<tags>
 			<tag>stable</tag>
