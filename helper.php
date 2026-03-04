@@ -39,7 +39,7 @@ class modSocialBadgesHelper {
         ],
         'youtube' => [
             'title' => 'Youtube',
-            'url'   => 'www.youtube.com/user/',
+            'url'   => 'www.youtube.com/',
         ],
         'flickr' => [
             'title' => 'Flickr',
