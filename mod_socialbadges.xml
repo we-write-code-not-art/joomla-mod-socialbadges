@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
-<extension type="module" version="6.0.3" client="site" method="upgrade">
+<extension type="module" version="6.0.4" client="site" method="upgrade">
     <name>Social Badges</name>
     <author>Michael Allen</author>
-    <version>6.0.3</version>
+    <version>6.0.4</version>
     <description>Displays social badges.</description>
     <updateservers>
       <server type="extension" name="mod_socialbadges" priority="1">https://raw.githubusercontent.com/we-write-code-not-art/joomla-mod-socialbadges/main/manifest.xml</server>
@@ -33,70 +33,42 @@
 						<option	value="">JNONE</option>
 					</field>
 
-					<field name="badges1"
-						type="repeatable"
-						icon="list"
-						description=""
-						label="Badges"
-						default="">
-						<fieldset hidden="true" name="badges_modal1" repeat="true">
-							<field name="type" type="list" default="" label="Social Badge" description="">
-								<option value="facebook">Facebook</option>
-								<option value="flickr">Flickr</option>
-								<option value="google">Google</option>
-								<option value="instagram">Instagram</option>
-								<option value="linkedin">LinkedIn</option>
-								<option value="pinterest">Pinterest</option>
-								<option value="twitter">Twitter</option>
-								<option value="youtube">Youtube</option>
-							</field>
-							<field
-								name="id1"
-								type="text"
-								label="User ID"
-								description="" />
-						</fieldset>
-					</field>						
+          <field
+              name="badge_list"
+              type="subform"
+              label="Badges"
+              description=""
+              multiple="true"
+              layout="joomla.form.field.subform.repeatable"
+          >
 
-<field
-    name="badge_list"
-    type="subform"
-    label="Badges"
-    description=""
-    multiple="true"
-    layout="joomla.form.field.subform.repeatable"
->
+              <form>
+                  <fields name="badge_fields">
+                      <field
+                          name="type"
+                          type="list"
+                          label="Social Badge"
+                          default=""
+                      >
+                          <option value="facebook">Facebook</option>
+                          <option value="flickr">Flickr</option>
+                          <option value="google">Google</option>
+                          <option value="instagram">Instagram</option>
+                          <option value="linkedin">LinkedIn</option>
+                          <option value="pinterest">Pinterest</option>
+                          <option value="twitter">Twitter</option>
+                          <option value="youtube">YouTube</option>
+                      </field>
 
-    <form>
-        <fields name="badge_fields">
-            <field
-                name="type"
-                type="list"
-                label="Social Badge"
-                default=""
-            >
-                <option value="facebook">Facebook</option>
-                <option value="flickr">Flickr</option>
-                <option value="google">Google</option>
-                <option value="instagram">Instagram</option>
-                <option value="linkedin">LinkedIn</option>
-                <option value="pinterest">Pinterest</option>
-                <option value="twitter">Twitter</option>
-                <option value="youtube">YouTube</option>
-            </field>
+                      <field
+                          name="id"
+                          type="text"
+                          label="User ID"
+                      />
+                  </fields>
+              </form>
 
-            <field
-                name="id"
-                type="text"
-                label="User ID"
-            />
-        </fields>
-    </form>
-
-</field>
-
-
-
+          </field>
 				</fieldset>
 				<fieldset
 					name="advanced">
@@ -112,9 +84,6 @@
 					description="JFIELD_ALT_MODULE_LAYOUT_DESC"
 				/>
 				</fieldset>
-
-
 			</fields>	
 		</config>
-
 </extension>
