@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
-<extension type="module" version="6.0.5" client="site" method="upgrade">
+<extension type="module" version="6.0.6" client="site" method="upgrade">
     <name>Social Badges</name>
     <author>Michael Allen</author>
-    <version>6.0.5</version>
+    <version>6.0.6</version>
     <description>Displays social badges.</description>
     <updateservers>
       <server type="extension" name="mod_socialbadges" priority="1">https://raw.githubusercontent.com/we-write-code-not-art/joomla-mod-socialbadges/main/manifest.xml</server>
